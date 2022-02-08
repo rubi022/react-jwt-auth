@@ -1,0 +1,15 @@
+dependencies: router-dom, bootstrap, axios
+
+axios:- the services uses axios for http requests and local storage for user informaton and jwt.
+
+
+login: post(username,password) & save JWT to local storage
+
+logout():  remove JWT from local storage
+
+register: post(username,email , password)
+
+getCurrentUser: get stored user infrmtn
+
+http requests needs auth header for accessing protected paths
+for that we can create a helper function .

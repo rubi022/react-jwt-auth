@@ -2,13 +2,13 @@
 
 import axios from 'axios';
 
-const API_URL="https://localhost:8081/api/";
+const API_URL="https://cp.btfd.cc/api/v2/barong/";
 
 class AuthService{
-    login(username,password){
+    login(email,password){
         return axios
-        .post(API_URL+"signin",{
-            username,
+        .post(API_URL+"identity/sessions",{
+            email,
             password
         })
         .then (response =>{
@@ -22,7 +22,7 @@ class AuthService{
         localStorage.removeItem("user");
     }
     register(username,email,password){
-        return axios.post(API_URL+ "signup",{
+        return axios.post(API_URL+ "identity/users",{
             username,
             email,
             password

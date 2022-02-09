@@ -84,7 +84,7 @@ class App extends Component{
               </li>
             </div>
           ) : (
-            <div className="navbar-nav ml-auto">
+            <div className="collapse navbar-collapse justify-content-end">
               <li className="nav-item">
                 <Link to="/login" className="nav-link">
                   Login

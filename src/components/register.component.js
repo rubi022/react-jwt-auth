@@ -106,14 +106,8 @@ export default class Register extends Component {
   }
   render() {
     return (
-      <div className="col-md-4">
-        <div className="card card-container">
-          <img
-            src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-            alt="profile-img"
-            className="profile-img-card"
-            width="50"
-          />
+      <div className="container h-100 w-50 log">
+        <div className="card">
           <Form
             onSubmit={this.handleRegister}
             ref={c => {

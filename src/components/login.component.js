@@ -69,14 +69,8 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <div className="col-md-4">
-        <div className="card card-container" >
-          <img
-            src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-            alt="profile-img"
-            className="profile-img-card"
-            width='50'
-          />
+      <div className="container h-100 w-50">
+        <div className="card" >
           <Form
             onSubmit={this.handleLogin}
             ref={c => {
